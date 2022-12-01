@@ -12,7 +12,7 @@ body {
     height: 50vw;
     max-height: 700px;
 
-    background: skyblue;
+    /* background: skyblue; */
 
     position: relative;
     overflow: hidden;
