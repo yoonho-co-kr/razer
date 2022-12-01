@@ -1,0 +1,18 @@
+<svg id="icon-blackshark" xmlns="http://www.w3.org/2000/svg" width="34.002" height="34" viewBox="0 0 34.002 34">
+  <g id="Razer_BlackShark_icon_default" data-name="Razer BlackShark icon default" transform="translate(2468.327 2474)">
+    <g id="Group_503" data-name="Group 503" transform="translate(-2468.326 -2457.483)">
+      <rect id="Rectangle_150" data-name="Rectangle 150" width="2.791" height="16.056" rx="1.395" transform="matrix(0.966, -0.259, 0.259, 0.966, 6.514, 0.722)" fill="#eee"/>
+      <path id="Subtraction_51" data-name="Subtraction 51" d="M5.6,15.639a3,3,0,0,1-2.9-2.224L.1,3.7A3,3,0,0,1,2.224.027L2.327,0V5.156a2,2,0,0,0,4,0V1.8c.021.059.045.137.067.216l2.6,9.713A3,3,0,0,1,6.873,15.4l-.494.132A3.006,3.006,0,0,1,5.6,15.639Z" transform="translate(0 1.844)" fill="#eee"/>
+    </g>
+    <g id="Group_502" data-name="Group 502" transform="translate(-2465.926 -2474)">
+      <path id="Subtraction_49" data-name="Subtraction 49" d="M29.29,15.381h0l-3.436-.946A15.992,15.992,0,0,0,23.294,8.6,3.565,3.565,0,0,0,23.472,7.5c0-3.033-3.961-5.5-8.83-5.5s-8.83,2.467-8.83,5.5a3.494,3.494,0,0,0,.179,1.1,15.985,15.985,0,0,0-2.553,5.815L0,15.374a21.539,21.539,0,0,1,.972-4.165,19,19,0,0,1,3.18-5.834A15.033,15.033,0,0,1,8.868,1.442a12.286,12.286,0,0,1,11.55,0,15.053,15.053,0,0,1,4.716,3.933,19,19,0,0,1,3.18,5.834,21.656,21.656,0,0,1,.973,4.171Z" transform="translate(0)" fill="#eee"/>
+      <path id="Subtraction_50" data-name="Subtraction 50" d="M.038,5.5h0A3.579,3.579,0,0,1,0,5C0,2.243,3.462,0,7.717,0s7.717,2.243,7.717,5a3.311,3.311,0,0,1-.037.494A4.732,4.732,0,0,0,12.911,2.3,10.361,10.361,0,0,0,7.717,1,10.361,10.361,0,0,0,2.522,2.3,4.719,4.719,0,0,0,.038,5.5Z" transform="translate(6.926 3)" fill="#eee"/>
+    </g>
+    <rect id="Rectangle_192" data-name="Rectangle 192" width="2" height="9" rx="1" transform="translate(-2465 -2458.303)" fill="#eee"/>
+    <g id="Group_504" data-name="Group 504" transform="translate(-2447.691 -2457.483)">
+      <rect id="Rectangle_150-2" data-name="Rectangle 150" width="2.791" height="16.056" rx="1.395" transform="matrix(-0.966, -0.259, 0.259, -0.966, 2.696, 16.231)" fill="#eee"/>
+      <path id="Subtraction_51-2" data-name="Subtraction 51" d="M2.326,15.639h0l-.1-.027A3,3,0,0,1,.1,11.938L2.7,2.225A3,3,0,0,1,6.379.1l.494.132A3,3,0,0,1,8.995,3.91l-2.6,9.713c-.019.072-.041.144-.066.214V10.483a2,2,0,0,0-4,0v5.154Z" transform="translate(13.365 17.483) rotate(180)" fill="#eee"/>
+    </g>
+    <rect id="Rectangle_194" data-name="Rectangle 194" width="2" height="9" rx="1" transform="translate(-2439.652 -2458.303)" fill="#eee"/>
+  </g>
+</svg>

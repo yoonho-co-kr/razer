@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.018" height="36" viewBox="0 0 40.018 36">
+  <g id="Razer_Kraken_icon" data-name="Razer Kraken icon" transform="translate(2472.576 2474)">
+    <g id="Group_501" data-name="Group 501" transform="translate(-2473 -2458.751)">
+      <g id="Group_498" data-name="Group 498" transform="translate(0 3.106) rotate(-13)">
+        <rect id="Rectangle_150" data-name="Rectangle 150" width="5.809" height="16.055" rx="1" transform="translate(8 0)" fill="#eee"/>
+        <path id="Subtraction_44" data-name="Subtraction 44" d="M3,12.284H3A7.879,7.879,0,0,1,0,6.145,7.844,7.844,0,0,1,3.007,0C3,.053,3,.11,3,.174v12q0,.055,0,.109Z" transform="translate(0 1.882)" fill="#eee"/>
+        <rect id="Rectangle_189" data-name="Rectangle 189" width="3" height="16" rx="1.5" transform="translate(4 0.056)" fill="#eee"/>
+      </g>
+      <g id="Group_499" data-name="Group 499" transform="translate(37.253 18.751) rotate(-167)">
+        <rect id="Rectangle_150-2" data-name="Rectangle 150" width="5.808" height="16.056" rx="1" transform="translate(8 0)" fill="#eee"/>
+        <path id="Subtraction_44-2" data-name="Subtraction 44" d="M3.007,12.284h0A7.845,7.845,0,0,1,0,6.139,7.878,7.878,0,0,1,3,0C3,.032,3,.067,3,.111v12c0,.057,0,.115.007.172Z" transform="translate(0 1.89)" fill="#eee"/>
+        <rect id="Rectangle_189-2" data-name="Rectangle 189" width="3" height="16" rx="1.5" transform="translate(4 0)" fill="#eee"/>
+      </g>
+    </g>
+    <g id="Group_500" data-name="Group 500" transform="translate(-2467.101 -2474)">
+      <path id="Subtraction_49" data-name="Subtraction 49" d="M29,16.362h0l-3.208-.811a15.015,15.015,0,0,0-2.824-7.443,3.245,3.245,0,0,0,.174-1.04c0-2.858-3.877-5.183-8.642-5.183S5.857,4.21,5.857,7.068a3.18,3.18,0,0,0,.176,1.039A15.012,15.012,0,0,0,3.21,15.538L0,16.357a19.917,19.917,0,0,1,1.121-5.794,17.714,17.714,0,0,1,3.112-5.5A14.635,14.635,0,0,1,8.848,1.359a12.434,12.434,0,0,1,11.3,0,14.635,14.635,0,0,1,4.616,3.706,17.737,17.737,0,0,1,3.112,5.5A19.956,19.956,0,0,1,29,16.361Z" fill="#eee"/>
+      <path id="Subtraction_50" data-name="Subtraction 50" d="M.037,5.5h0A3.73,3.73,0,0,1,0,5C0,2.243,3.319,0,7.4,0s7.4,2.243,7.4,5a3.45,3.45,0,0,1-.036.494A4.712,4.712,0,0,0,12.38,2.3,9.615,9.615,0,0,0,7.4,1,9.615,9.615,0,0,0,2.418,2.3,4.7,4.7,0,0,0,.037,5.5Z" transform="translate(7.101 2.8)" fill="#eee"/>
+    </g>
+    <path id="Path_8227" data-name="Path 8227" d="M5,3A1,1,0,0,1,5,1H6.954a1,1,0,0,1,0,2Zm6.854-.013H8.943V1.728s-1.283-.054,2.911,0S17,0,17,0s.387.252,1,.733C16.746,2.794,13.568,3,12.345,3,12.038,3,11.854,2.987,11.854,2.987Z" transform="translate(-2459.25 -2441)" fill="#eee"/>
+  </g>
+</svg>

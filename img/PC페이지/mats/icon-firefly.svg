@@ -1,0 +1,11 @@
+<svg id="icon-firefly" xmlns="http://www.w3.org/2000/svg" width="40" height="29" viewBox="0 0 40 29">
+  <g id="Razer_Firefly_icon_default" data-name="Razer Firefly icon default" transform="translate(-14 3)">
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(14 2)" fill="none" stroke="#eee" stroke-width="1">
+      <rect width="40" height="24" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="23" rx="1.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_100" data-name="Rectangle 100" width="36" height="20" rx="1" transform="translate(16 4)" fill="#eee"/>
+    <path id="Subtraction_151" data-name="Subtraction 151" d="M-8550-3555h-10a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1Z" transform="translate(8577 3556)" fill="#eee"/>
+    <rect id="Rectangle_464" data-name="Rectangle 464" width="2" height="2" transform="translate(21 -3)" fill="#eee"/>
+  </g>
+</svg>

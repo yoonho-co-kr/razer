@@ -1,0 +1,314 @@
+body {
+    background-color: #1c1c1c;
+}
+
+#wrap_contain {
+    padding-top: 100px;
+}
+
+.main_banner {
+    width: 100%;
+    max-width: 1920px;
+    height: 50vw;
+    max-height: 700px;
+
+    background: skyblue;
+
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.banner_box {
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* opacity: 0.5; */
+    /* border: 1px red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner>img {
+    height: 100%;
+}
+
+#btn_slide_L:hover,
+#btn_slide_R:hover {
+    border: #34ce29 4px solid;
+    transition: all 0.5s;
+}
+
+.button {
+    width: 70px;
+    height: 150px;
+    /* background-color: aliceblue; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: rgba(0, 0, 0, 0) 4px solid;
+    opacity: 0.7;
+}
+
+.button_clk {
+    border: #34ce29 4px solid;
+    transition: all 0.2s;
+}
+
+.prev {
+    left: 1vw;
+}
+
+.next {
+    right: 1vw;
+}
+
+.indicator {
+
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slide_btn {
+    width: 40px;
+    height: 5px;
+    background-color: #efefef;
+    transition: all 0.3s;
+    /* z-index: 999; */
+    opacity: 0.9;
+}
+
+.slide_color {
+    background-color: #34ce29;
+    width: 80px;
+}
+
+.thumb_box {
+    width: 100%;
+    /* height: 800px; */
+    max-width: 1520px;
+    height: 40vw;
+    /* max-height: 800px; */
+    margin: 0 auto;
+    /* background: skyblue; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+.thumb_scale {
+    width: calc((100% / 3) - 10px);
+    /* max-width: 600px; */
+    height: calc((100% / 2) - 10px);
+    /* max-height: 400px; */
+    box-sizing: border-box;
+    /* border: 1px #efefef solid; */
+    color: #efefef;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.thumb_scale>img {
+    /* height: 100%; */
+    width: 100%;
+    /* max-width: 600px; */
+    /* height: calc((100% / 2) - 10px); */
+    /* max-height: 400px; */
+    box-sizing: border-box;
+    /* border: 1px #efefef solid; */
+    color: #efefef;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.thumb_slide>img {
+    width: 80%;
+    transition: scale 0.3s;
+}
+
+.thumb_txt_box {
+    max-width: 750px;
+    padding: 30px;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+.thumb_title {
+    color: #34ce29;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.thumb_sub {
+    color: #efefef;
+    font-size: 15px
+}
+
+.sub_banner {
+    width: 100%;
+    max-width: 1920px;
+    height: 50vw;
+    max-height: 700px;
+    margin: 120px auto;
+
+    /* border: 1px #efefef solid; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(../img/레이저_홈페이지_이미지/pc페이지/2.메인페이지/sub_banner/sub_banner_01.jpg) no-repeat center / cover; */
+
+}
+
+.sub_banner>img {
+    width: 100%;
+}
+
+.thumb_slide_wrapper {
+    width: 100%;
+
+    height: calc(20vw + 2px + 100px);
+    max-width: 1920px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.thumb_slide_box {
+    width: 100%;
+    max-width: 1520px;
+    height: calc(100% - 50px);
+    position: relative;
+    transform: translateY(50px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* .thumb_slide_box.animated {
+            transition: 0.5s ease-out;
+        } */
+
+.thumb_slide {
+    /* width: calc((100% - (30px*3)) / 4); */
+    width: calc(100% / 4);
+    height: 100%;
+    border: rgba(0, 0, 0, 0) 4px solid;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/* .thumb_slide:not(:last-child) {
+    margin-right: 30px;
+} */
+
+.thumb_slide_controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    gap: 20px;
+
+    /* transform: translate(-50%, 0); */
+}
+
+.thumb_prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+
+.thumb_next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+.thumb_control {
+    width: 20px;
+    height: 20px;
+    /* background-color: #34ce29; */
+}
+
+.thumb_control>img {
+    width: 100%;
+}
+
+.b_color {
+    border: 4px #34ce29 solid;
+    transition: border 1s;
+}
+
+.fixed_banner {
+    width: 100%;
+    height: 400px;
+    background: url(../img/fixed_banner/razer-community.jpg) no-repeat fixed center / cover;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .main_banner {
+        width: 100%;
+        height: 35vw;
+    }
+
+    .banner>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumb_slide {
+        /* width: calc((100% - (30px*3)) / 4); */
+        width: calc(100% / 3);
+        height: 100%;
+        /* border: rgba(0, 0, 0, 0) 4px solid; */
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .thumb_slide_wrapper {
+        height: calc(20vw + 2px + 200px);
+    }
+
+    .fixed_banner {
+        height: 300px;
+    }
+}
