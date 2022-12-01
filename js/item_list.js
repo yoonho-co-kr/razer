@@ -19,7 +19,7 @@ const ITEM_LIST = [
     [
         { cate: 'mice', item_no: 1, icon: './img/PC페이지/mice/icon-deathadder.svg', title: 'deathAdder', o_price: 90000, s_price: 50000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: '#0f0,#00f', thumb_img: '' },
         { cate: 'mice', item_no: 2, icon: './img/PC페이지/mice/icon-viper.svg', title: 'viper', o_price: 20000, s_price: 70000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: 'purple,red,green', thumb_img: '' },
-        { cate: 'mice', item_no: 3, icon: './img/PC페이지/mice/icon-Naga.svg', title: 'naga', o_price: 30000, s_price: 20000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: 'red,blue, orange', thumb_img: '' },
+        { cate: 'mice', item_no: 3, icon: './img/PC페이지/mice/icon-naga.svg', title: 'naga', o_price: 30000, s_price: 20000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: 'red,blue, orange', thumb_img: '' },
         { cate: 'mice', item_no: 4, icon: './img/PC페이지/mice/icon-basilisk.svg', title: 'basilisk', o_price: 40000, s_price: 40000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: 'red,green,blue', thumb_img: '' },
         { cate: 'mice', item_no: 5, icon: './img/PC페이지/mice/icon-orochi.svg', title: 'orochi', o_price: 50000, s_price: 50000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: 'red,green,blue', thumb_img: '' },
         { cate: 'mice', item_no: 6, icon: './img/PC페이지/mice/icon-proclick.svg', title: 'pro Click', o_price: 70000, s_price: 50000, desc: '상품에 대한 설명이 표시됩니다.', opt_color: 'red,green,blue', thumb_img: '' },
