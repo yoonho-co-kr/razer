@@ -343,6 +343,10 @@
  }
 
  @media screen and (max-width: 1150px) {
+     .account>div.search {
+         display: none;
+     }
+
      .main_menu {
          display: none;
      }
@@ -547,7 +551,7 @@
          display: flex;
          gap: 100px;
          margin-top: 50px;
-         font-size: 10px;
+         font-size: 9px;
      }
  }
 
@@ -602,7 +606,7 @@
 
      .col_footer {
          gap: 5px;
-         font-size: 10px;
+         font-size: 9px;
      }
 
      .icons {
@@ -642,4 +646,11 @@
      .menu_txt {
          font-size: 12px;
      }
- }
+
+     .legal_term {
+         gap: 10px;
+     }
+
+     .legal_term>li::after {
+         margin-left: 10px;
+     }
