@@ -8,7 +8,12 @@ $(document).ready(function () {
         $('.banner_box').append(make_main_banner);
     }
     //썸네일 6개 생성 > 썸네일박스 넣기
-    for (let i = 0; i < 6; i++) {
+    let thumb_length = 6;
+    if (matchMedia("screen and (max-width: 500px)").matches) {
+        thumb_length = 4;
+    }
+
+    for (let i = 0; i < thumb_length; i++) {
         let make_thumb = `  <div class="thumb_scale">
                                 <img src="${BANNER_LIST[1][i].image}" alt="">
                             </div>`
@@ -148,7 +153,7 @@ $(document).ready(function () {
         }
     });
     /*썸네일 3X2 사진 넣기*/
-    for (let i = 0; i < $('.thumb').length; i++) {
+    for (let i = 0; i < thumb_length; i++) {
 
         $('.thumb').eq(i).append(`<img src="../razer_img/thumb_slide/thumb_slide_0${i + 1}.png" alt="">`)
     }
@@ -201,6 +206,10 @@ $(document).ready(function () {
     if (matchMedia("screen and (max-width: 1150px)").matches) {
         item_width = thumb_slide_width / 3;
         show_item = 2 * item_width;
+    }
+    if (matchMedia("screen and (max-width: 500px)").matches) {
+        item_width = thumb_slide_width / 2;
+        show_item = 3 * item_width;
     }
     for (let i = 0; i < b_count; i++) {
         $('.thumb_slide').eq(i).css({ left: item_width * i })

@@ -312,3 +312,30 @@ body {
         height: 300px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .thumb_sub {
+        font-size: 10px;
+    }
+
+    .thumb_slide_wrapper {
+        height: calc(20vw + 2px + 150px);
+        /* transform: translateY(50%); */
+    }
+
+    .thumb_slide {
+        width: calc(100% / 2);
+    }
+
+    .fixed_banner {
+        height: 150px;
+    }
+
+    .thumb_box {
+        height: 300px;
+    }
+
+    .thumb_scale {
+        width: calc((100% / 2) - 10px);
+    }
+}
