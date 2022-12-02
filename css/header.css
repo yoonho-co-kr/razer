@@ -558,7 +558,7 @@
  @media screen and (max-width: 500px) {
      .login {
          font-weight: 400;
-         font-size: 14px;
+         font-size: 12px;
      }
 
      .account>div.search {
@@ -571,7 +571,7 @@
      }
 
      .account>div {
-         height: 20px;
+         height: 15px;
          float: none;
          line-height: normal;
          padding: 0 10px 0 0;
@@ -581,7 +581,7 @@
      .account>div>img {
          width: auto;
          height: 100%;
-         transform: translateY(2px);
+         transform: translateY(1px);
      }
 
      .logo>a>img {

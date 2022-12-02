@@ -338,4 +338,8 @@ body {
     .thumb_scale {
         width: calc((100% / 2) - 10px);
     }
+
+    .slide_btn {
+        height: 3px;
+    }
 }
