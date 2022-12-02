@@ -283,9 +283,12 @@ $(document).ready(function () {
     /* ====================================================================================================
     =========================== 반응형 =====================================================================
     ======================================================================================================= */
-    let header_move = "115"
+    let header_in = "100"
+    let header_out = "100"
     if (matchMedia("screen and (max-width: 500px)").matches) {
-        header_move = "75"
+        header_out = "125"
+        header_in = "75"
+
     }
     if (matchMedia("screen and (max-width: 1150px)").matches) {
 
@@ -331,7 +334,7 @@ $(document).ready(function () {
                 transition: "all 0.2s"
             })
             $('.header3').css({
-                transform: "translateX(" + header_move + "%)",
+                transform: "translateX(" + header_in + "%)",
                 transition: "all 0.2s"
             })
         })
@@ -362,7 +365,7 @@ $(document).ready(function () {
             })
 
             $('.header3').css({
-                transform: "translateX(-" + (+(header_move) + 50) + "%)"
+                transform: "translateX(-" + header_out + "%)"
             })
             $('.menu2_line').css({
                 transform: "translateY(-10px) scaleX(0.1)",
@@ -389,7 +392,7 @@ $(document).ready(function () {
             let s_top = $(window).scrollTop();
             if (s_top > 0) {
                 $('.header3').css({
-                    transform: "translateX(-" + (+(header_move) + 50) + "%)"
+                    transform: "translateX(-" + header_out + "%)"
                 })
             }
         })
