@@ -223,7 +223,35 @@
     }
 
     .item_desc {
-        font-size: 8px;
+        font-size: 5px;
         line-height: 25px;
+    }
+
+    .chart_product>li {
+        width: 50px;
+        font-size: 5px;
+    }
+
+    .chart_product>li>img {
+        height: auto;
+        width: 100%;
+    }
+
+    .chart_product>li:nth-child(1) {
+        height: auto;
+    }
+
+    .chart_product>li:nth-child(2) {
+        font-size: 5px;
+        /* padding: 2px; */
+        display: none;
+    }
+
+
+    .chart_cate>li {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
