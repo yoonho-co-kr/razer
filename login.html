@@ -6,10 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./js/item_list.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/login.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>로그인페이지</h1>
+    <div id="wrap_header">
+    </div>
+    <div id="wrap_login">
+        <div class="contain_login">
+            <form action="">
+                <div class="contain_title">로그인</div>
+                <div class="id_box input_box">
+                    <div class="login_txt_box">
+                        <div class="id_title">아이디</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+
+                    <input type="text" class="id_input">
+                </div>
+                <div class="error_msg"></div>
+                <div class="pw_box input_box">
+                    <div class="login_txt_box">
+                        <div class="pw_title">비밀번호</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+                    <input type="text" class="pw_input">
+                </div>
+                <div class="error_msg"></div>
+                <button type="submit" class="login_submit_btn">로그인</button>
+            </form>
+        </div>
+        <div class="mid_line"></div>
+        <div class="contain_join">
+            <div class="contain_title">회원가입</div>
+            <div class="contain_sub_title">회원가입을 하여 멤버십 혜택, 신제품 출시 소식 등 다양한 혜택을 받아보세요.</div>
+            <button>회원가입</button>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
 </body>
 
 </html>
