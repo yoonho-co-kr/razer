@@ -67,13 +67,15 @@
     width: 100%;
     box-sizing: border-box;
     transition: 0.5s all;
-
+    color: #efefef;
+    padding: 0 10px;
 }
 
 .id_input:focus,
 .pw_input:focus {
     outline: none;
     border: #34ce29 2px solid;
+    color: #efefef;
 }
 
 button {
@@ -105,4 +107,62 @@ button {
     color: #999999;
     margin-top: 25px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    #wrap_login {
+        padding: 100px 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .contain_login {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .mid_line {
+        width: 100%;
+        height: 1px;
+        background-color: #999999;
+        margin: 30px 0px;
+        box-sizing: border-box;
+    }
+
+    .contain_join {
+        padding: 0 20px;
+        box-sizing: border-box;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #wrap_login {
+        padding: 100px 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .contain_login {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .mid_line {
+        width: 100%;
+        height: 1px;
+        background-color: #999999;
+        margin: 30px 0px;
+        box-sizing: border-box;
+    }
+
+    .contain_join {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        height: 200px;
+    }
 }
