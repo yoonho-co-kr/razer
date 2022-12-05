@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./js/item_list.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/join.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/join.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap_header">
+    </div>
+    <div id="wrap_login">
+        <div class="contain_join">
+            <form action="">
+                <div class="contain_title">회원가입</div>
+                <div class="id_box input_box">
+                    <div class="login_txt_box">
+                        <div class="id_title">아이디</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+
+                    <input type="text" class="join_input" id="txt_id" onfocus="focus_chk('id_chk');">
+                </div>
+                <div class="error_msg_box" id="msg_id">
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                </div>
+                <div class="pw_box input_box">
+                    <div class="login_txt_box">
+                        <div class="pw_title">비밀번호</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+                    <input type="password" class="join_input" id="txt_pw" onfocus="focus_chk('pw_chk');">
+                </div>
+                <div class="error_msg_box">
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                </div>
+                <div class="pw_chk_box input_box">
+                    <div class="login_txt_box">
+                        <div class="pw_chk_title">비밀번호 확인</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+                    <input type="password" class="join_input" id="txt_pwChk" onfocus="focus_chk('pwChk_chk');">
+                </div>
+                <div class="error_msg_box">
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                </div>
+                <div class="name_box input_box">
+                    <div class="login_txt_box">
+                        <div class="name_title">이름</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+                    <input type="text" class="join_input" id="txt_name" onfocus="focus_chk('name_chk');">
+                </div>
+                <div class="error_msg_box">
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                </div>
+                <div class="add_box input_box">
+                    <div class="login_txt_box">
+                        <div class="add_title">주소</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+                    <input type="text" class="join_input" id="txt_add" onfocus="focus_chk('add_chk');">
+                </div>
+                <div class="error_msg_box">
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                </div>
+                <div class="number_box input_box">
+                    <div class="login_txt_box">
+                        <div class="number_title">전화번호</div>
+                        <div class="require_chk">(필수)</div>
+                    </div>
+                    <input type="tel" class="join_input" id="txt_no" onfocus="focus_chk('number_chk');">
+                </div>
+                <div class="error_msg_box">
+                    <p class="error_msg"></p>
+                    <p class="error_msg"></p>
+                </div>
+                <button type="submit" class="login_submit_btn">회원가입</button>
+            </form>
+        </div>
+        <div class="mid_line"></div>
+        <div class="contain_login">
+            <div class="contain_title">이미 회원이시면?</div>
+            <div class="contain_sub_title">이미 회원가입하여 혜택을 받고 계시다면 아래 버튼을 눌러 로그인을 진행하세요.</div>
+            <a href="login.html"><button>로그인</button></a>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+</body>
+
+</html>
