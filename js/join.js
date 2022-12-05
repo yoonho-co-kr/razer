@@ -67,3 +67,23 @@ function print_msg(from, to) {
         write_msg[to].innerText = "ㆍ필수 입력 항목 입니다"
     }
 }
+function click_chk() {
+    print_msg(txt_id, 1);
+    print_msg(txt_pw, 4);
+    print_msg(txt_pwChk, 6);
+    print_msg(txt_name, 8);
+    print_msg(txt_add, 10);
+    print_msg(txt_no, 12);
+
+    if (txt_id.value.length == 0 || txt_id.value == "" ||
+        txt_id.value.length < 5 || txt_id.value.length > 15 ||
+        txt_pw.value.length == 0 || txt_pw.value == "" ||
+        txt_pw.value.length < 8 ||
+        txt_pwChk.value.length == 0 || txt_pwChk.value == "" ||
+        txt_name.value.length == 0 || txt_name.value == "" ||
+        txt_add.value.length == 0 || txt_add.value == "" ||
+        txt_no.value.length == 0 || txt_no.value == "") {
+        alert("입력을 확인해주세요")
+        return false;
+    }
+}

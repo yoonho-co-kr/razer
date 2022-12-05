@@ -123,6 +123,7 @@ button {
     .contain_login {
         padding: 0 20px;
         box-sizing: border-box;
+
     }
 
     .mid_line {
@@ -136,7 +137,7 @@ button {
     .contain_join {
         padding: 0 20px;
         box-sizing: border-box;
-        height: 200px;
+        height: auto;
     }
 
 
@@ -169,7 +170,7 @@ button {
         width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
-        height: 200px;
+        height: auto;
     }
 
     button {
