@@ -654,4 +654,8 @@
      .legal_term>li::after {
          margin-left: 10px;
      }
+
+     #header1_wrap_r {
+         width: 75px;
+     }
  }
