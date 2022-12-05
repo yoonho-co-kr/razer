@@ -60,6 +60,7 @@ function focus_chk(type) {
         print_msg(txt_name, 8);
         print_msg(txt_add, 10);
     }
+
 }
 function print_msg(from, to) {
     let write_msg = document.querySelectorAll('.error_msg');
@@ -82,7 +83,8 @@ function click_chk() {
         txt_pwChk.value.length == 0 || txt_pwChk.value == "" ||
         txt_name.value.length == 0 || txt_name.value == "" ||
         txt_add.value.length == 0 || txt_add.value == "" ||
-        txt_no.value.length == 0 || txt_no.value == "") {
+        txt_no.value.length == 0 || txt_no.value == "" ||
+        txt_no.value.length < 10 || txt_no.value.length > 11) {
         alert("입력을 확인해주세요")
         return false;
     }
