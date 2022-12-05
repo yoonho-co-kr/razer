@@ -87,3 +87,12 @@ function click_chk() {
         return false;
     }
 }
+function checkNumber(event) {
+    if (event.key === '.'
+        || event.key === '-'
+        || event.key >= 0 && event.key <= 9) {
+        return true;
+    }
+
+    return false;
+}

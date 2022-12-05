@@ -88,7 +88,8 @@
                         <div class="number_title">전화번호</div>
                         <div class="require_chk">(필수)</div>
                     </div>
-                    <input type="tel" class="join_input" id="txt_no" onfocus="focus_chk('number_chk');">
+                    <input type="tel" class="join_input" id="txt_no" onfocus="focus_chk('number_chk');"
+                        onkeypress='return checkNumber(event)'>
                 </div>
                 <div class="error_msg_box">
                     <p class="error_msg"></p>
