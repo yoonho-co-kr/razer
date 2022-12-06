@@ -77,21 +77,78 @@ $(document).ready(function () {
             $('.menu3').eq(i).append(make_menu3)
         }
     }
-    /*헤더3 호버 색상변경 */
-    $('.menu_info').hover(function () {
-        $('.menu_info').css({
-            color: '#efefef'
+    sync_width_1920();
+    function sync_width_1920() {
+        /*헤더3 호버 색상변경 */
+        $('.menu_info').hover(function () {
+            $('.menu_info').css({
+                color: '#efefef'
+            })
+            $(this).css({
+                color: "#34ce29"
+            }, 300)
         })
-        $(this).css({
-            color: "#34ce29"
-        }, 300)
-    })
-    /*컨텐츠 부분 클릭 시 헤더 & 카트 창 OFF*/
-    // $('#wrap_contain').click(function () {
+        /*컨텐츠 부분 클릭 시 헤더 & 카트 창 OFF*/
+        // $('#wrap_contain').click(function () {
 
-    $(window).scroll(function () {
-        let s_top = $(window).scrollTop();
-        if (s_top > 0) {
+        $(window).scroll(function () {
+            let s_top = $(window).scrollTop();
+            if (s_top > 0) {
+                $('.menu2_arrow').css({
+                    transform: "translate(-50%, -50%) rotateZ(180deg)",
+                    transition: "all 0.3s",
+                    transformOrigin: 'bottom',
+                    // backgroundColor: "#707070"
+                })
+                $('.menu2_arrow').find('svg').css({
+                    fill: "#999999"
+                })
+                $('.rgb2_box').css({
+                    transform: "translateY(59px)",
+                    transition: "all 0.2s"
+
+                })
+                $('.menu2_line').css({
+                    transform: "translateY(-10px) scaleX(0.1)",
+                    opacity: "0"
+                })
+                $('.menu3').eq($(this).index()).css({
+                    top: "0px",
+                    transition: "top 0.3s, opacity 0.3s",
+                    opacity: "0",
+
+                })
+                $(".menu2_txt").css({
+                    color: "#707070"
+                })
+                $('.menu3').css({
+                    top: "0px",
+                    transition: "all 0.2s",
+                    opacity: "0"
+                })
+                $('#wrap_header').css({
+                    height: "60px",
+                    transition: "all 0.2s"
+                })
+                $('.cart_box').removeClass('cart_box_block')
+            }
+        })
+
+
+        // })
+        /*카트 ON/OFF*/
+        $('.cart').click(function () {
+            if ($('.cart_box').hasClass('cart_box_block') == false)
+                $('.cart_box').addClass('cart_box_block')
+            else $('.cart_box').removeClass('cart_box_block')
+        })
+        /*
+        헤더 1 클릭시 
+        1. 헤더3 내려오기 
+        2. 헤더1 언더바 키우기 & 화살표 돌리기
+        3. 이전에 적용했던거 효과 삭제
+        */
+        $('.menu2').click(function () {
             $('.menu2_arrow').css({
                 transform: "translate(-50%, -50%) rotateZ(180deg)",
                 transition: "all 0.3s",
@@ -101,132 +158,85 @@ $(document).ready(function () {
             $('.menu2_arrow').find('svg').css({
                 fill: "#999999"
             })
-            $('.rgb2_box').css({
-                transform: "translateY(59px)",
-                transition: "all 0.2s"
-
-            })
             $('.menu2_line').css({
                 transform: "translateY(-10px) scaleX(0.1)",
                 opacity: "0"
             })
-            $('.menu3').eq($(this).index()).css({
+            $('.menu3').css({
                 top: "0px",
-                transition: "top 0.3s, opacity 0.3s",
+                transition: "all 0.2s",
                 opacity: "0",
-
+                transform: "translate(0,-50px)",
+                left: "0"
             })
             $(".menu2_txt").css({
                 color: "#707070"
             })
-            $('.menu3').css({
-                top: "0px",
-                transition: "all 0.2s",
-                opacity: "0"
+            $(this).find('.menu2_txt').css({
+                color: "#EFEFEF"
             })
-            $('#wrap_header').css({
-                height: "60px",
+            //화살표 회전
+            $(this).find('.menu2_arrow').css({
+                transform: 'translate(-50%, -50%) rotateZ(0deg)',
+                transformOrigin: 'bottom',
+                transition: "all 0.3s",
+            })
+            $(this).find('svg').css({
+                fill: "#34ce29"
+            })
+            //언더바 1
+            $(this).find('.menu2_line').css({
+                opacity: "1",
+                transform: "translateY(-10px) scaleX(1)",
                 transition: "all 0.2s"
             })
-            $('.cart_box').removeClass('cart_box_block')
-        }
-    })
-
-
-    // })
-    /*카트 ON/OFF*/
-    $('.cart').click(function () {
-        if ($('.cart_box').hasClass('cart_box_block') == false)
-            $('.cart_box').addClass('cart_box_block')
-        else $('.cart_box').removeClass('cart_box_block')
-    })
-    /*
-    헤더 1 클릭시 
-    1. 헤더3 내려오기 
-    2. 헤더1 언더바 키우기 & 화살표 돌리기
-    3. 이전에 적용했던거 효과 삭제
-    */
-    $('.menu2').click(function () {
-        $('.menu2_arrow').css({
-            transform: "translate(-50%, -50%) rotateZ(180deg)",
-            transition: "all 0.3s",
-            transformOrigin: 'bottom',
-            // backgroundColor: "#707070"
-        })
-        $('.menu2_arrow').find('svg').css({
-            fill: "#999999"
-        })
-        $('.menu2_line').css({
-            transform: "translateY(-10px) scaleX(0.1)",
-            opacity: "0"
-        })
-        $('.menu3').css({
-            top: "0px",
-            transition: "all 0.2s",
-            opacity: "0"
-        })
-        $(".menu2_txt").css({
-            color: "#707070"
-        })
-        $(this).find('.menu2_txt').css({
-            color: "#EFEFEF"
-        })
-        //화살표 회전
-        $(this).find('.menu2_arrow').css({
-            transform: 'translate(-50%, -50%) rotateZ(0deg)',
-            transformOrigin: 'bottom',
-            transition: "all 0.3s",
-        })
-        $(this).find('svg').css({
-            fill: "#34ce29"
-        })
-        //언더바 1
-        $(this).find('.menu2_line').css({
-            opacity: "1",
-            transform: "translateY(-10px) scaleX(1)",
-            transition: "all 0.2s"
-        })
-        $('.rgb2_box').css({
-            transform: "translateY(170px)",
-            transition: "all 0.2s"
-        })
-        $('.menu3').eq($(this).index()).css({
-            top: "115px",
-            transition: "all 0.2s",
-            opacity: "1",
-        })
-        $('#wrap_header').css({
-            height: "172px",
-            transition: "all 0.2s"
-        })
-    })
-    /*헤더 FIXED WHEN SCROLL*/
-    $(window).scroll(function () {
-        let s_top = $(window).scrollTop();
-        let header_top = $('#wrap_header').offset().top;
-        if (s_top > 0) {
-            $("#wrap_header").css({
-                backgroundColor: "#1c1c1c",
-                opacity: "0.9",
-                position: "fixed",
-                left: "0",
-                top: "0",
-                transition: "position 0s, opacity 0.3s"
+            $('.rgb2_box').css({
+                transform: "translateY(170px)",
+                transition: "all 0.2s"
             })
-
-        }
-        else {
-            $("#wrap_header").css({
-
+            $('.menu3').eq($(this).index()).css({
+                top: "115px",
+                transition: "all 0.2s",
                 opacity: "1",
-                position: "absolute",
-                left: "0",
-
-                transition: "position 0.3s, opacity 0.3s"
-
+                transform: "translate(0,-50px)",
+                left: "0"
             })
-        }
-    })
+            $('#wrap_header').css({
+                height: "172px",
+                transition: "all 0.2s"
+            })
+            $(".header3").css({
+                transform: "translate(0)"
+            })
+        })
+        /*헤더 FIXED WHEN SCROLL*/
+        $(window).scroll(function () {
+            let s_top = $(window).scrollTop();
+            let header_top = $('#wrap_header').offset().top;
+            if (s_top > 0) {
+                $("#wrap_header").css({
+                    backgroundColor: "#1c1c1c",
+                    opacity: "0.9",
+                    position: "fixed",
+                    left: "0",
+                    top: "0",
+                    transition: "position 0s, opacity 0.3s"
+                })
+
+            }
+            else {
+                $("#wrap_header").css({
+
+                    opacity: "1",
+                    position: "absolute",
+                    left: "0",
+
+                    transition: "position 0.3s, opacity 0.3s"
+
+                })
+            }
+        })
+    }
     /* ====================================================================================================
     =========================== 푸터 =====================================================================
     ======================================================================================================= */
@@ -285,13 +295,141 @@ $(document).ready(function () {
     ======================================================================================================= */
     let header_in = "100"
     let header_out = "100"
+    $(window).resize(function () {
+        if (window.innerWidth > 1150) {
+            $(".header3").css({
+                transform: "translate(0,-50px)"
+            })
+            $(".rgb2_box").css({
+                transform: "translateY(59px)"
+            })
+            ham_active = true;
+            sync_width_1920();
+        }
+        else if (window.innerWidth <= 1150) {
+            sync_width_1150();
+            $(".header3").css({
+                transform: "translateX(-100%)"
+            })
+        }
+        else if (window.innerWidth <= 500) {
+            header_out = "125"
+            header_in = "75"
+        }
+    })
     if (matchMedia("screen and (max-width: 500px)").matches) {
         header_out = "125"
         header_in = "75"
 
     }
     if (matchMedia("screen and (max-width: 1150px)").matches) {
+        sync_width_1150();
+        // $('.menu2').click(function () {
+        //     $('.menu2_line').css({
+        //         transform: "translateY(0) scaleX(0.1)",
+        //         opacity: "0"
+        //     })
+        //     $('.menu3').css({
+        //         left: "-100%",
+        //         top: "0",
+        //         transition: "all 0.2s",
+        //         opacity: "0"
+        //     })
+        //     $(".menu2_txt").css({
+        //         color: "#707070"
+        //     })
+        //     $(this).find('.menu2_txt').css({
+        //         color: "#EFEFEF"
+        //     })
+        //     //언더바 1
+        //     $(this).find('.menu2_line').css({
+        //         opacity: "1",
+        //         transform: "translateY(0) scaleX(1)",
+        //         transition: "all 0.2s"
+        //     })
+        //     $('.rgb2_box').css({
+        //         transform: "translateY(0)",
+        //         transition: "all 0.2s"
+        //     })
+        //     $('.menu3').eq($(this).index()).css({
+        //         left: "0",
+        //         top: "0",
+        //         transition: "all 0.2s",
+        //         opacity: "1",
+        //     })
+        //     $('#wrap_header').css({
+        //         height: "63px",
+        //         transition: "all 0.2s"
+        //     })
+        //     $('.header2').css({
 
+        //         transition: "all 0.2s"
+        //     })
+        //     $('.header3').css({
+        //         transform: "translateX(" + header_in + "%)",
+        //         transition: "all 0.2s"
+        //     })
+        // })
+        // let ham_chk = true;
+        // $('.burger_box').click(function () {
+
+        //     if (ham_chk) {
+        //         // 햄버거 => X 관련 코드  
+        //         ham($('#line_top'), 'translateY(8px)', 'translateY(8px) rotate(45deg)');
+        //         ham($('#line_mid'), -1, 'scale(0)');
+        //         ham($('#line_bot'), 'translateY(-8px)', 'translateY(-8px) rotate(-45deg)');
+        //     }
+        //     else {
+        //         // X => 햄버거 관련 코드   
+        //         ham($('#line_top'), 'translateY(8px) rotate(0)', 'translateY(0px) rotate(0)');
+        //         ham($('#line_mid'), -1, 'scale(1)');
+        //         ham($('#line_bot'), 'translateY(-8px) rotate(0deg)', 'translateY(0px)');
+        //     }
+        //     // 메뉴판 움직임 관련 코드 
+        //     $('.header2').toggleClass('ham_active');
+        //     $('.header1').toggleClass('ham_active2');
+        //     // if ($('.header3').hasClass("ham_active")) {
+        //     $('.menu3').css({
+        //         top: "0px",
+        //         left: "0",
+        //         transition: "top 0.3s, opacity 0.3s",
+        //         opacity: "0",
+        //     })
+
+        //     $('.header3').css({
+        //         transform: "translateX(-" + header_out + "%)"
+        //     })
+        //     $('.menu2_line').css({
+        //         transform: "translateY(-10px) scaleX(0.1)",
+        //         opacity: "0"
+        //     })
+        //     // }
+        //     ham_chk = !ham_chk;
+        // })
+        // const timer = 300;
+        // function ham(el, trans, rot) {
+
+        //     if (trans != -1) {
+        //         el.css({
+        //             transform: trans
+        //         });
+        //     }
+        //     setTimeout(() => {
+        //         el.css({
+        //             transform: rot
+        //         })
+        //     }, timer);
+        // }
+        // $(window).scroll(function () {
+        //     let s_top = $(window).scrollTop();
+        //     if (s_top > 0) {
+        //         $('.header3').css({
+        //             transform: "translateX(-" + header_out + "%)"
+        //         })
+        //     }
+        // })
+    }
+    function sync_width_1150() {
         $('.menu2').click(function () {
             $('.menu2_line').css({
                 transform: "translateY(0) scaleX(0.1)",
@@ -396,10 +534,5 @@ $(document).ready(function () {
                 })
             }
         })
-
-
-
-
-
     }
 })

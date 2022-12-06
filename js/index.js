@@ -9,6 +9,22 @@ $(document).ready(function () {
     }
     //썸네일 6개 생성 > 썸네일박스 넣기
     let thumb_length = 6;
+    $(window).resize(function () {
+
+        if (window.innerWidth <= 500) {
+            thumb_length = 4;
+        }
+        else {
+            thumb_length = 6;
+        }
+        $('.thumb_box').empty();
+        for (let i = 0; i < thumb_length; i++) {
+            let make_thumb = `  <div class="thumb_scale">
+                                <img src="${BANNER_LIST[1][i].image}" alt="">
+                            </div>`
+            $('.thumb_box').append(make_thumb);
+        }
+    })
     if (matchMedia("screen and (max-width: 500px)").matches) {
         thumb_length = 4;
     }
@@ -22,37 +38,12 @@ $(document).ready(function () {
     //서브배너 스크롤 효과
     $('.sub_banner').append(`<img class="sub_banner_img"src="${BANNER_LIST[2][0].image}" alt="">`)
 
-
-    // $(window).scroll(function () {
-    //     let s_top = $(window).scrollTop();
-    //     let sub_banner_top = $('.sub_banner').offset().top - 100;
-    //     if (s_top >= sub_banner_top) {
-    //         $(".sub_banner_img").attr("src") = BANNER_LIST[2][1];
-
-    //     }
-
-    // })
-
     for (let i = 0; i < BANNER_LIST[3].length; i++) {
         let make_thumb_slide = `<div class="thumb_slide">
                                     <img src="./img/thumb_slide/thumb_slide_0${i + 1}.png" alt="">
                                 </div>`
         $('.thumb_slide_box').append(make_thumb_slide)
     }
-
-    /*
-        - 인디케이터/페이지네이션
-            클릭하면 해당 배너가 들어오게
-            개수: banner의 개수에 맞추기(html로 직접 넣지 말기)
-    
-        - banner 바뀔때마다 인디케이터 색 변경
-        - 인디케이터 클릭할때마다 해당 banner 우측에서 가운데로 들어오기
-            1) circle 클릭 감지
-            2) 몇번째 circle이 눌렸는지 감지
-            3) banner 중에 2번에서 구한 번째꺼 가운데로 가져오기
-    
-    
-    */
     /*******************************************/
     /***** 초기화 시작 *****/
     // 인디케이터 삽입
@@ -203,6 +194,24 @@ $(document).ready(function () {
     let item_width = thumb_slide_width / 4;  // 메인 가로 / 보여줄 칸수
     let b_count = $('.thumb_slide').length; // 배너 개수
     let show_item = 1 * item_width;
+
+    $(window).resize(function () {
+        clearInterval(interval_thumb_slide)
+        if (window.innerWidth <= 1150) {
+            item_width = thumb_slide_width / 3;
+            show_item = 2 * item_width;
+        }
+        else if (window.innerWidth <= 500) {
+            item_width = thumb_slide_width / 2;
+            show_item = 3 * item_width;
+        }
+
+    }
+        // , function () {
+        //     auto_slide_thumb()
+        // }
+    )
+
     if (matchMedia("screen and (max-width: 1150px)").matches) {
         item_width = thumb_slide_width / 3;
         show_item = 2 * item_width;
@@ -216,6 +225,7 @@ $(document).ready(function () {
     }
 
     $(document).on('click', '.thumb_next', function () {
+
         // thumb_slide들을 다 한칸씩 이동
         $('.thumb_slide').animate({ left: `-=${item_width}` }, thumb_slide_timer, 'linear');
 
