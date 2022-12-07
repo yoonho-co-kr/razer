@@ -308,6 +308,9 @@ $(document).ready(function () {
             $(".rgb2_box").css({
                 transform: "translateY(59px)"
             })
+            $(".menu3").css({
+                top: "0"
+            })
             ham_active = true;
             sync_width_1920();
         }
@@ -509,25 +512,27 @@ $(document).ready(function () {
                 ham($('#line_bot'), 'translateY(-8px) rotate(0deg)', 'translateY(0px)');
             }
             // 메뉴판 움직임 관련 코드 
-            $('.header2').toggleClass('ham_active');
-            $('.header1').toggleClass('ham_active2');
-            // if ($('.header3').hasClass("ham_active")) {
-            $('.menu3').css({
-                top: "0px",
-                left: "0",
-                transition: "top 0.3s, opacity 0.3s",
-                opacity: "0",
-            })
+            if (window.innerWidth < 1150) {
+                $('.header2').toggleClass('ham_active');
+                $('.header1').toggleClass('ham_active2');
+                // if ($('.header3').hasClass("ham_active")) {
+                $('.menu3').css({
+                    top: "0px",
+                    left: "0",
+                    transition: "top 0.3s, opacity 0.3s",
+                    opacity: "0",
+                })
 
-            $('.header3').css({
-                transform: "translateX(-" + header_out + "%)"
-            })
-            $('.menu2_line').css({
-                transform: "translateY(-10px) scaleX(0.1)",
-                opacity: "0"
-            })
-            // }
-            ham_chk = !ham_chk;
+                $('.header3').css({
+                    transform: "translateX(-" + header_out + "%)"
+                })
+                $('.menu2_line').css({
+                    transform: "translateY(-10px) scaleX(0.1)",
+                    opacity: "0"
+                })
+                // }
+                ham_chk = !ham_chk;
+            }
         })
         const timer = 300;
         function ham(el, trans, rot) {
