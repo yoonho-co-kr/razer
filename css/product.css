@@ -172,6 +172,31 @@
     width: 100%;
 }
 
+@media screen and (max-width: 970px) {
+    .item_title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .item_desc {
+        font-size: 9px;
+        /* font-weight: 700; */
+    }
+
+    .item_info {
+        padding: 0 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .item_title {
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .sec {
         padding: 0 20px;
