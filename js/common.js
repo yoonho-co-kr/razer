@@ -32,8 +32,8 @@ function load_list(cate_idx, start_idx, show_qty, sub_cate_idx) {
     for (let i = 0; i < get_info.length; i++) {
         let list = `<div class="item_box">
                         <div class="item_img">
-                            <a href="deal.html?cate=${cate_idx}&item=${get_info[i].title}"> 
-                                <img src="${get_info[i].thumb_img}" alt="">`;
+                            <a href="item.html"> 
+                                <img src="${get_info[i].thumb_img}" alt=""></a>`;
 
 
         // if (cate_idx == 1)

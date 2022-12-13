@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="./js/item_list.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/basket.js"></script>
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./CSS/basket.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+  <div id="wrap_header"></div>
+  <div id="wrap">
+    <div class="main">
+      <div class="shopping_box">
+        <div class="shopping_hader">
+          <h1>YOUR SHOPPING CART</h1>
+
+          <div class="shopping_main">
+            <div class="item_box">
+              <div class="item item_img">
+                <img src="./img/마우스페이지/1.png" alt="">
+              </div>
+              <div class="item item_name">
+                <div>Razer Viper V2 Pro-Black</div>
+              </div>
+              <div class="item item_name">
+                <span>In Stock</span>
+              </div>
+              <div class="item item_number">
+
+                <div class="buy">
+                  <button type="button" class="plus" onclick="plus()" id="bu">+</button>
+                  <input type="number" class="numBox" value="1" id="numBox">
+                  <button type="button" class="minus" onclick="minus()">-</button>
+                </div>
+              </div>
+              <div class="item item_name">
+                <span id="sum">205,000원</span>
+              </div>
+
+            </div>
+            <div class="border">
+              <span>예상 배송비 0원</span>
+            </div>
+
+            <div class="border">
+              <span>원</span>
+              <span id="f_sum">205,000</span>
+              <span>총결제금액:</span>
+            </div>
+
+          </div>
+          <div class="buy_box">
+            <div>구매하기</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>

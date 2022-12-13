@@ -125,6 +125,11 @@
      transform: translateY(5px);
  }
 
+ .account>div>a>img {
+     width: 20px;
+     transform: translateY(5px);
+ }
+
  .header3 {
      position: absolute;
      top: 0%;
@@ -579,6 +584,12 @@
      }
 
      .account>div>img {
+         width: auto;
+         height: 100%;
+         transform: translateY(1px);
+     }
+
+     .account>div>a>img {
          width: auto;
          height: 100%;
          transform: translateY(1px);

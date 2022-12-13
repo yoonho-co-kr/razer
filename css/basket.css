@@ -1,0 +1,181 @@
+body {
+  background-color: #1c1c1c;
+}
+
+#wrap {
+  padding-top: 100px;
+}
+
+.main {
+  width: 1400px;
+  height: 1100px;
+
+
+  margin: 0 auto;
+}
+
+.shopping_box {
+  height: 75%;
+
+}
+
+.shopping_hader {
+  width: 1100px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+
+  border-bottom: 1px solid #fff;
+}
+
+.shopping_main {
+  width: 100%;
+  height: 600px;
+  margin-top: 60px;
+}
+
+.item_box {
+  display: flex;
+  height: 120px;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.item {
+  width: calc(100% / 5);
+  height: 100%;
+  float: left;
+}
+
+.item_img {
+  width: 80px;
+  height: 100%;
+}
+
+.item_img>img {
+  width: 100%;
+  margin-top: 15px;
+
+}
+
+.item_name {
+  line-height: 110px;
+  text-align: center;
+}
+
+.item_number {
+  display: flex;
+  text-align: left;
+  line-height: 110px;
+}
+
+.buy {
+  height: 100%;
+  margin-left: 20px;
+  display: flex;
+}
+
+.plus,
+.minus {
+  font-size: 26px;
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.numBox {
+  height: 30px;
+  width: 50px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.border {
+  margin-top: 150px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+span {
+  float: right;
+}
+
+.border>span {
+  line-height: 110px;
+}
+
+.buy_box {
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  line-height: 70px;
+  background-color: #333;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  cursor: pointer;
+
+
+}
+
+.buy_box:hover {
+  background-color: #34ce29;
+  transition: all 1s;
+
+}
+
+
+@media screen and (max-width:1150px) {
+
+  .main {
+    width: 100%;
+
+  }
+
+  .shopping_hader {
+    width: 900px;
+  }
+
+  .item_name {
+    font-size: 12px;
+  }
+
+  .numBox {
+    height: 20px;
+    width: 25px;
+    margin-top: 47px;
+  }
+
+  .numBox {
+    height: 20px;
+    width: 30px;
+  }
+
+  .plus,
+  .minus {
+    font-size: 12px;
+
+  }
+
+}
+
+@media screen and (max-width:900px) {
+
+
+  .shopping_hader {
+    width: 600px;
+  }
+
+  .item_box {
+    display: block;
+    height: 120px;
+    margin-bottom: 40px;
+  }
+
+  .item_name {
+    font-size: 4px;
+  }
+}

@@ -1,0 +1,19 @@
+<svg id="icon-viper" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.167" height="34.396" viewBox="0 0 18.167 34.396">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Union_51" data-name="Union 51" d="M-5960.917-3417.825c-5.309.3-10.7-5.671-8.629-14.571,2.077-8.947,0-14.324,0-14.324a26.864,26.864,0,0,0,4.463-1.2A28.93,28.93,0,0,0-5961-3449.9v-.1l.075.053.088-.053v.114a19.843,19.843,0,0,0,3.91,2.075,22.01,22.01,0,0,0,4.638,1.091s-2.079,5.377,0,14.324c2.017,8.687-3.067,14.581-8.249,14.582Q-5960.727-3417.814-5960.917-3417.825Z" transform="translate(6644.999 3554.001)" fill="#eee"/>
+    </clipPath>
+  </defs>
+  <g id="Razer_Viper_icon_default" data-name="Razer Viper icon default" transform="translate(-654.902 -99)">
+    <path id="Subtraction_180" data-name="Subtraction 180" d="M-5960.537-3414.6c-.133,0-.262-.005-.382-.01s-.255.01-.38.01a8.1,8.1,0,0,1-6.266-3.258,11.314,11.314,0,0,1-2.176-4.825,15.377,15.377,0,0,1,.194-6.5,32.005,32.005,0,0,0,.779-10.517,16.7,16.7,0,0,0-.779-3.807,27.209,27.209,0,0,0,4.463-1.2c.521-.2,1.082-.436,1.667-.712V-3437a2,2,0,0,0,2,2h1a2,2,0,0,0,2-2v-8.257a16.013,16.013,0,0,0,1.491.656,22.382,22.382,0,0,0,4.639,1.091,16.426,16.426,0,0,0-.779,3.807,31.972,31.972,0,0,0,.779,10.517,15.378,15.378,0,0,1,.193,6.5,11.319,11.319,0,0,1-2.175,4.825A8.109,8.109,0,0,1-5960.537-3414.6Z" transform="translate(6624.903 3548)" fill="#eee"/>
+    <path id="Subtraction_181" data-name="Subtraction 181" d="M-5966.5-3437h-1a1,1,0,0,1-1-1v-.094h3v.094A1,1,0,0,1-5966.5-3437Zm1-1.686h-3v-.986h3v.985Zm0-1.578h-3v-.988h3v.987Zm0-1.58h-3v-.986h3v.985Zm0-1.578h-3v-.988h3v.987Zm0-1.58h-3a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1Z" transform="translate(6630.984 3549)" fill="#eee"/>
+    <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-20.095 -3)" clip-path="url(#clip-path)">
+      <path id="Path_7993" data-name="Path 7993" d="M-2542.262-2840.562l6.643-2.287,1.25-3.531h4.071l1.214,3.531,6.108,2.287" transform="translate(3216.459 2964.38)" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <path id="Path_7996" data-name="Path 7996" d="M0,.626V3" transform="translate(684.095 115)" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+    </g>
+    <g id="Rectangle_502" data-name="Rectangle 502" transform="translate(663.486 99)" fill="none" stroke="#eee" stroke-width="1">
+      <rect width="1" height="3" stroke="none"/>
+      <rect x="0.5" y="0.5" height="2" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg id="icon-atheris" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="30" viewBox="0 0 22 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Union_65" data-name="Union 65" d="M11,29.743H9.551C.061,28.317-.438,17.259.179,14.508s.453-6.554.915-9.815S9.551,0,9.551,0H11V0h1.445S20.436,1.434,20.9,4.693s.3,7.065.917,9.815.118,13.809-9.372,15.235Zm0,0Z" transform="translate(0)" fill="#eee"/>
+    </clipPath>
+  </defs>
+  <g id="Razer_Atheris_icon_default" data-name="Razer Atheris icon default" transform="translate(-1037.995 -102.744)">
+    <path id="Subtraction_195" data-name="Subtraction 195" d="M11,29.511h0a12.718,12.718,0,0,1-1.463-.1,10.018,10.018,0,0,1-7.064-4.341A15.912,15.912,0,0,1,.184,14.279,34.14,34.14,0,0,0,.733,8.939C.813,7.444.9,5.9,1.1,4.467,1.458,1.935,6.4.5,8.5,0V8.674a2,2,0,0,0,2,2h.149v.992H10.5a.5.5,0,0,0-.5.5v2.367a.5.5,0,0,0,.5.5h.15V19.6h.75V15.033h.1a.5.5,0,0,0,.5-.5V12.166a.5.5,0,0,0-.5-.5h-.1v-.992h.1a2,2,0,0,0,2-2V0c2.107.5,7.043,1.937,7.4,4.466.2,1.431.286,2.977.367,4.473a34.1,34.1,0,0,0,.55,5.34,15.963,15.963,0,0,1-2.311,10.814,10.037,10.037,0,0,1-7.072,4.351C11.123,29.508,11.011,29.511,11,29.511Z" transform="translate(1037.995 103.233)" fill="#eee"/>
+    <path id="Subtraction_197" data-name="Subtraction 197" d="M2,7H1A1,1,0,0,1,0,6V5.75H3V6A1,1,0,0,1,2,7ZM3,5.159H0V4.172H3v.985ZM3,3.58H0V2.593H3v.986ZM3,2H0V1A1,1,0,0,1,1,0H2A1,1,0,0,1,3,1V2Z" transform="translate(1047.497 106)" fill="#eee"/>
+    <circle id="Ellipse_354" data-name="Ellipse 354" cx="0.5" cy="0.5" r="0.5" transform="translate(1048.536 116.874)" fill="#eee"/>
+    <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(1037.999 102.744)" clip-path="url(#clip-path)">
+      <path id="Path_8032" data-name="Path 8032" d="M7049.469,3555.478a56.2,56.2,0,0,1,0,13.513" transform="translate(-7031.474 -3556.216)" fill="none" stroke="#1a1a1a" stroke-width="0.75"/>
+      <path id="Path_8033" data-name="Path 8033" d="M7049.848,3555.478a56.173,56.173,0,0,0,0,13.513" transform="translate(-7045.469 -3556.216)" fill="none" stroke="#1a1a1a" stroke-width="0.75"/>
+      <path id="Path_8034" data-name="Path 8034" d="M1084.073,115.052s-2.865,5.1-3.615,6.479-.736,6.337-.736,6.337" transform="translate(-1061.727 -99.192)" fill="none" stroke="#1a1a1a" stroke-width="0.75"/>
+      <path id="Path_8035" data-name="Path 8035" d="M1079.722,115.052s2.865,5.1,3.615,6.479.736,6.337.736,6.337" transform="translate(-1079.884 -99.192)" fill="none" stroke="#1a1a1a" stroke-width="0.75"/>
+    </g>
+  </g>
+</svg>

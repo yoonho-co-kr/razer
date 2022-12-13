@@ -17,7 +17,7 @@ $(document).ready(function () {
                     <!-- <div class="regist">회원가입</div> -->
                     <div class="login"><a href="login.html">로그인</a></div>
                     <div class="search"><img src="./img/header_icon/green_search.png" alt=""></div>
-                    <div class="cart"><img src="./img/header_icon/green_cart.png" alt=""></div>
+                    <div class="cart"><a href="./basket.html"><img src="./img/header_icon/green_cart.png" alt=""></a></div>
                 </div>
             </div>
         </div>
@@ -137,11 +137,11 @@ $(document).ready(function () {
 
         // })
         /*카트 ON/OFF*/
-        $('.cart').click(function () {
-            if ($('.cart_box').hasClass('cart_box_block') == false)
-                $('.cart_box').addClass('cart_box_block')
-            else $('.cart_box').removeClass('cart_box_block')
-        })
+        // $('.cart').click(function () {
+        //     if ($('.cart_box').hasClass('cart_box_block') == false)
+        //         $('.cart_box').addClass('cart_box_block')
+        //     else $('.cart_box').removeClass('cart_box_block')
+        // })
         /*
         헤더 1 클릭시 
         1. 헤더3 내려오기 

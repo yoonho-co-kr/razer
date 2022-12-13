@@ -248,6 +248,6 @@ $(document).ready(function () {
     function auto_slide_thumb() {
         interval_thumb_slide = setInterval(() => {
             $('.thumb_next').trigger('click')
-        }, thumb_slide_timer + 3000) // 2000은 멈춰있을 시간   
+        }, thumb_slide_timer + 3000)
     }
 });

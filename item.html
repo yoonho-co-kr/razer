@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="./js/item_list.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/item.js"></script>
+
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/item.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="wrap_header"></div>
+  <div id="wrap">
+
+    <div class="img_slide">
+
+      <div class="slide slide_1">
+      </div>
+      <div class="slide slide_2">
+      </div>
+      <div class="slide slide_3">
+      </div>
+
+      <div class="slide slide_4">
+      </div>
+
+      <span class="arrow-prev btn_slide" id="btn_slide_L"></span>
+      <span class="arrow-next btn_slide" id="btn_slide_R"></span>
+    </div>
+    <div class="item_name">
+      <h2>RAZER VIPER V2 PRO</h2>
+    </div>
+    <div class="main">
+      <aside class="item_aside">
+
+        <div class="item_img">
+          <img src="./img/마우스페이지/viper-v2-pro-black-1500x1000-1.jpg" alt="" id="display">
+
+        </div>
+
+
+        <div class="item_img_num">
+          <ul class="thumb">
+            <li>
+              <img src="./img/마우스페이지/viper-v2-pro-black-1500x1000-1.jpg" alt="" class="thumb_img on">
+            </li>
+            <li><img src="./img/마우스페이지/viper-v2-pro-black-1500x1000-2.jpg" alt="" class="thumb_img"></li>
+            <li><img src="./img/마우스페이지/viper-v2-pro-black-1500x1000-3.jpg" alt="" class="thumb_img"></li>
+            <li><img src="./img/마우스페이지/viper-v2-pro-black-1500x1000-4.jpg" alt="" class="thumb_img"></li>
+          </ul>
+        </div>
+
+
+        <div class="text">
+          <span class="text_item item_1">RAZER VIPER V2 PRO</span><br>
+          <span class="text_item item_2">Ultra-lightweight, Ultra-fast<br> Wireless Esports Mouse<br>
+          </span>
+          <span id="o_price"> 205,000원</span>
+        </div>
+
+      </aside>
+
+
+      <aside class="item_aside_r">
+
+        <img src="./img/마우스페이지/viper-v2-pro-Black.png" alt="">
+
+        <div class="item_aside_text">
+          <ul class="aside_text_r">
+
+            <li>
+              <div class="img">
+                <img src="./img/마우스페이지/free-icon-check-mark-4663044.png" alt="" width="60px">
+              </div>
+              <div class="aside_txt">
+                <span>58g Ultra-lightweight Design</span>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img src="./img/마우스페이지/free-icon-check-mark-4663044.png" alt="" width="60px">
+              </div>
+              <div class="aside_txt">
+                <span>Razer™ 3세대 옵티컬 마우스 스위치</span>
+              </div>
+            </li>
+            <li>
+              <div class="img">
+                <img src="./img/마우스페이지/free-icon-check-mark-4663044.png" alt="" width="60px">
+              </div>
+              <div class="aside_txt">
+                <span>Razer™ HyperSpeed Wireless</span>
+              </div>
+
+            </li>
+            <li>
+              <div class="img">
+                <img src="./img/마우스페이지/free-icon-check-mark-4663044.png" alt="" width="60px">
+              </div>
+              <div class="aside_txt">
+                <span>Focus Pro 30K 옵티컬 센서</span>
+              </div>
+
+            </li>
+          </ul>
+
+
+          <div class="cont">
+            <div class="cont_txt">
+              <span>수량</span>
+            </div>
+            <div class="but">
+              <input type="button" value="-" id="button_m" class="button_box" onclick="minus()">
+
+              <input type="text" value="1" id="but_text">
+
+              <input type="button" value="+" id="button_p" class="button_box" onclick="plus()">
+            </div>
+            <div class="sum">
+
+              <div class="totel">
+
+                <span id="f_price">205,000</span>
+                <span id="one">원</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="buy_box">
+            <div class="buy_one">
+              <a href="./basket.html"><span>구매하기</span></a>
+            </div>
+            <div class="buy_two">
+              <a href="./basket.html"><span>장바구니</span></a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="img_list_box_A">
+
+    </div>
+    <div class="mid_txt">
+      <span>RAZER VIPER V2 PRO</span><br>
+      <span>전문가용</span>
+    </div>
+    <div class="img_list_box_B">
+    </div>
+
+    <div class="mid_txt">
+      <span>진정한 4,000HZ 무선 폴링레이트로 업그레이드 가능</span><br>
+      <span>가장 빠른 무선 성능을 경험해 보세요. 가장 진보한 마우스에 궁극적인 업그레이드를 적용하여 새로운 반응 표준을 제공해, 최고의 경쟁 게임에 필요한 속도를 확보합니다.</span>
+    </div>
+
+    <div class="img_list_box_C">
+
+      <div class="mid_list_item mid_one">
+      </div>
+      <div class="mid_list_item mid_two"></div>
+    </div>
+
+    <div class="img_list_box_D">
+    </div>
+    <div class="accodian_top">
+      <h1>기술사양</h1>
+    </div>
+    <div class="accodian_box">
+      <button class="accordion">일반</button>
+      <div class="panel">
+        <div class="panel_txt">
+          <div class="box"></div>
+          <div id="box_txt_A">틸트 스크롤 휠</div>
+          <div id="box_txt_B">None</div>
+        </div>
+
+        <div class="panel_txt">
+          <p class="box"></p>
+          <p id="box_txt_A">폼팩터</p>
+          <p id="box_txt_B">오른손 대칭형</p>
+        </div>
+
+        <div class="panel_txt">
+          <p class="box"></p>
+          <p id="box_txt_A">최대 가속(G)</p>
+          <p id="box_txt_B">70</p>
+        </div>
+
+        <div class="panel_txt">
+          <p class="box"></p>
+          <p id="box_txt_A">RGB 조명</p>
+          <p id="box_txt_B">None</p>
+        </div>
+      </div>
+
+      <button class="accordion">케이블</button>
+      <div class="panel">
+        <div class="panel_txt">
+          <div class="box"></div>
+          <div id="box_txt_A">틸트 스크롤 휠</div>
+          <div id="box_txt_B">None</div>
+        </div>
+
+        <div class="panel_txt">
+          <p class="box"></p>
+          <p id="box_txt_A">폼팩터</p>
+          <p id="box_txt_B">오른손 대칭형</p>
+        </div>
+      </div>
+
+
+      <button class="accordion">기타</button>
+      <div class="panel">
+        <div class="panel_txt">
+          <div class="box"></div>
+          <div id="box_txt_A">틸트 스크롤 휠</div>
+          <div id="box_txt_B">None</div>
+        </div>
+
+        <div class="panel_txt">
+          <p class="box"></p>
+          <p id="box_txt_A">폼팩터</p>
+          <p id="box_txt_B">오른손 대칭형</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </aside>
+  </div>
+  </div>
+  <div class="footer"></div>
+  <script>
+    $(document).ready(function () {
+
+    });
+  </script>
+
+</body>
+
+</html>

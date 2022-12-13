@@ -98,7 +98,7 @@ $(document).ready(function () {
     $(".chart_product li").mouseenter(function () {
         // let this_chart_no = $(".chart_product li").eq($(this).index())
         let this_chart_no = $(this).index()
-        console.log(this_chart_no)
+        // console.log(this_chart_no)
         for (let i = 0; i < $(".chart_product").length; i++) {
             console.log(i)
             $(".chart_cate li").eq(this_chart_no - 2).css({
