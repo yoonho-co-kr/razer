@@ -221,7 +221,7 @@ $(document).ready(function () {
             if (s_top > 0) {
                 $("#wrap_header").css({
                     backgroundColor: "#1c1c1c",
-                    opacity: "0.9",
+                    opacity: "1",
                     position: "fixed",
                     left: "0",
                     top: "0",

@@ -32,7 +32,7 @@ function load_list(cate_idx, start_idx, show_qty, sub_cate_idx) {
     for (let i = 0; i < get_info.length; i++) {
         let list = `<div class="item_box">
                         <div class="item_img">
-                            <a href="item.html"> 
+                            <a href="item2.html"> 
                                 <img src="${get_info[i].thumb_img}" alt=""></a>`;
 
 
