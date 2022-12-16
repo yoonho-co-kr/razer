@@ -4,7 +4,11 @@ $(document).ready(function () {
         let s_top = $(window).scrollTop();
         let nav_top = $('.nav_bar_box').offset().top;
         // console.log(s_top)
-        if (s_top > 19100) {
+        let spec_top = $(".spec_sec").offset().top;
+        let desc_top = $(".desc_sec").offset().top;
+        console.log(desc_top)
+        console.log(spec_top)
+        if (s_top > spec_top) {
             $("#nav_spec").css({
                 borderColor: "#34ce29",
                 backgroundColor: "#34ce29"
@@ -14,14 +18,18 @@ $(document).ready(function () {
                 backgroundColor: "#1c1c1c"
             })
         }
-        else if (s_top > 652) {
+        else if (s_top > desc_top) {
+            let top = "-38px"
+            if (window.innerWidth <= 1150) {
+                top = "-40px"
+            }
             $(".nav_bar_box").css({
                 backgroundColor: "#1c1c1c",
                 width: "100%",
                 maxWidth: "850px",
                 position: "fixed",
                 left: "50%",
-                top: "-38px",
+                top: top,
                 transform: "translateX(-50%)",
                 transition: "position 0s, opacity 0.3s max-width 0.3s"
             })

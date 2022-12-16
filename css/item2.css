@@ -511,4 +511,14 @@
         gap: 15px;
     }
 
+    #nav_desc,
+    #nav_spec {
+        width: calc((100% - 10px) / 2);
+        margin: 0;
+    }
+
+    .nav_bar_box {
+        justify-content: space-between;
+    }
+
 }
