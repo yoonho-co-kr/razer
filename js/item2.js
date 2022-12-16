@@ -1,13 +1,12 @@
 $(document).ready(function () {
 
     $(window).scroll(function () {
+
         let s_top = $(window).scrollTop();
         let nav_top = $('.nav_bar_box').offset().top;
         // console.log(s_top)
         let spec_top = $(".spec_sec").offset().top;
         let desc_top = $(".desc_sec").offset().top;
-        console.log(desc_top)
-        console.log(spec_top)
         if (s_top > spec_top) {
             $("#nav_spec").css({
                 borderColor: "#34ce29",
@@ -18,6 +17,7 @@ $(document).ready(function () {
                 backgroundColor: "#1c1c1c"
             })
         }
+
         else if (s_top > desc_top) {
             let top = "-38px"
             if (window.innerWidth <= 1150) {

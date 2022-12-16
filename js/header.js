@@ -62,10 +62,12 @@ $(document).ready(function () {
                                 </div>`
         $('.header2').append(make_menu2);
     }
+
     if (window.innerWidth <= 400) {
         let logo_change = $(".logo a img")
         logo_change.attr("src", "./img/logo/logo_small.png")
     }
+
     /*헤더3 박스 생성*/
     for (let i = 0; i < ITEM_LIST.length; i++) {
         let make_menu3_box = `<div class="menu3"></div>`

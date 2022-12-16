@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./js/item_list.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/cart.js"></script>
+
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrap_header"></div>
+    <div id="wrap_contain">
+        <div class="total_title_box">
+            <div class="qty">장바구니 (3개)</div>
+            <div class="checkout_box">
+                <div class="total_price">123,456원</div>
+                <div class="checkout_btn">결제</div>
+            </div>
+
+        </div>
+        <div class="cart_desc_box">
+            <div class="cart_img"></div>
+            <div class="cart_desc">
+                <div class="item_title">Razer PWM PC Fan Controller</div>
+                <div class="item_desc">
+                    <div>● 최대 8개의 팬 연결가능</div>
+                    <div>● 팬 속도조절 커스텀</div>
+                    <div>● 팬 모니터링 기능</div>
+                </div>
+            </div>
+            <div class="cart_qty">
+                <div class="qty_title"></div>
+                <div class="qty_btn">
+                    <div class="center">
+                        <select name="sources" id="sources" class="custom-select sources" placeholder="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="qty_remove"></div>
+            </div>
+            <div class="cart_price">123,456원</div>
+        </div>
+        <div class="total_final_box"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>
