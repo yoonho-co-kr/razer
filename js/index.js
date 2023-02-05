@@ -197,33 +197,23 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         clearInterval(interval_thumb_slide)
-        if (window.innerWidth <= 1150) {
-            item_width = thumb_slide_width / 3;
-            show_item = 2 * item_width;
-        }
-        else if (window.innerWidth <= 500) {
+        make_slide_banner()
+    })
+    make_slide_banner()
+    function make_slide_banner() {
+        if (window.innerWidth <= 500) {
             item_width = thumb_slide_width / 2;
             show_item = 3 * item_width;
         }
+        else if (window.innerWidth <= 1150) {
+            item_width = thumb_slide_width / 3;
+            show_item = 2 * item_width;
+        }
 
+        for (let i = 0; i < b_count; i++) {
+            $('.thumb_slide').eq(i).css({ left: item_width * i })
+        }
     }
-        // , function () {
-        //     auto_slide_thumb()
-        // }
-    )
-
-    if (matchMedia("screen and (max-width: 1150px)").matches) {
-        item_width = thumb_slide_width / 3;
-        show_item = 2 * item_width;
-    }
-    if (matchMedia("screen and (max-width: 500px)").matches) {
-        item_width = thumb_slide_width / 2;
-        show_item = 3 * item_width;
-    }
-    for (let i = 0; i < b_count; i++) {
-        $('.thumb_slide').eq(i).css({ left: item_width * i })
-    }
-
     $(document).on('click', '.thumb_next', function () {
 
         // thumb_slide들을 다 한칸씩 이동

@@ -44,7 +44,7 @@ $(document).ready(function () {
                 <div class="cart_btn" id="go_check_out">결 제</div>
             </div>
         </div>`
-    $("#wrap_header").append(make_header)
+    $("#wrap_header2").append(make_header)
     /*헤더1(대분류) 생성*/
     for (let i = 0; i < cate_arr.length; i++) {
         let make_menu2 = ` <div class="menu2">
@@ -83,7 +83,205 @@ $(document).ready(function () {
             $('.menu3').eq(i).append(make_menu3)
         }
     }
-    sync_width_1920();
+    let menu_on = false;
+    $(".menu2").click(function () {
+
+        if (menu_on == false) {
+            $('.menu2_arrow').css({
+                transform: "translate(-50%, -50%) rotateZ(180deg)",
+                transition: "all 0.3s",
+                transformOrigin: 'bottom',
+                // backgroundColor: "#707070"
+            })
+            $('.menu2_arrow').find('svg').css({
+                fill: "#999999"
+            })
+            $('.menu2_line').css({
+                transform: "translateY(-10px) scaleX(0.1)",
+                opacity: "0"
+            })
+            $('.menu3').css({
+                top: "0px",
+                transition: "all 0.2s",
+                opacity: "0",
+                transform: "translate(0,-50px)",
+                left: "0"
+            })
+            $(".menu2_txt").css({
+                color: "#707070"
+            })
+            $(this).find('.menu2_txt').css({
+                color: "#EFEFEF"
+            })
+            //화살표 회전
+            $(this).find('.menu2_arrow').css({
+                transform: 'translate(-50%, -50%) rotateZ(0deg)',
+                transformOrigin: 'bottom',
+                transition: "all 0.3s",
+            })
+            $(this).find('svg').css({
+                fill: "#34ce29"
+            })
+            //언더바 1
+            $(this).find('.menu2_line').css({
+                opacity: "1",
+                transform: "translateY(-10px) scaleX(1)",
+                transition: "all 0.2s"
+            })
+            $('.rgb2_box').css({
+                transform: "translateY(170px)",
+                transition: "all 0.2s"
+            })
+            $('.menu3').eq($(this).index()).css({
+                top: "115px",
+                transition: "all 0.2s",
+                opacity: "1",
+                transform: "translate(0,-50px)",
+                left: "0"
+            })
+            $('#wrap_header').css({
+                height: "172px",
+                transition: "all 0.2s"
+            })
+            $(".header3").css({
+                transform: "translate(0)"
+            })
+            if (window.innerWidth < 1150) {
+                $('.menu3').css({
+                    transform: "translate(0,30px)"
+                })
+            }
+            menu_on = true;
+            console.log(menu_on)
+        }
+        else if (menu_on == true) {
+            $('.menu2_arrow').css({
+                transform: "translate(-50%, -50%) rotateZ(180deg)",
+                transition: "all 0.3s",
+                transformOrigin: 'bottom',
+                // backgroundColor: "#707070"
+            })
+            $('.menu2_arrow').find('svg').css({
+                fill: "#999999"
+            })
+            $('.rgb2_box').css({
+                transform: "translateY(59px)",
+                transition: "all 0.2s"
+
+            })
+            $('.menu2_line').css({
+                transform: "translateY(-10px) scaleX(0.1)",
+                opacity: "0"
+            })
+            $('.menu3').eq($(this).index()).css({
+                top: "0px",
+                transition: "top 0.3s, opacity 0.3s",
+                opacity: "0",
+            })
+            $(".menu2_txt").css({
+                color: "#707070"
+            })
+            $('.menu3').css({
+                top: "0px",
+                transition: "all 0.2s",
+                opacity: "0"
+            })
+            $('#wrap_header').css({
+                height: "60px",
+                transition: "all 0.2s"
+            })
+
+            $(this).removeClass('menu_active');
+            menu_on = false;
+        }
+    })
+    $('.menu_info').hover(function () {
+        $('.menu_info').css({
+            color: '#efefef'
+        })
+        $(this).css({
+            color: "#34ce29"
+        }, 300)
+    })
+
+
+    $(window).scroll(function () {
+        let s_top = $(window).scrollTop();
+        let header_top = $('#wrap_header2').offset().top;
+        if (s_top > 0) {
+            header_fix("fixed")
+        }
+        else {
+            header_fix("absolute")
+        }
+
+    })
+    function header_fix(position) {
+        $("#wrap_header").css({
+            backgroundColor: "#1c1c1c",
+            opacity: "1",
+            position: position,
+            left: "0",
+            top: "0",
+            transition: "position 0s, opacity 0.3s"
+        })
+    }
+    /* ====================================================================================================
+    =========================== 푸터 =====================================================================
+    ======================================================================================================= */
+    let make_footer = `        <div class="row_footer1">
+            <ul class="col_footer">
+                <li>레이저 스토리</li>
+                <li>채용</li>
+                <li>투자자</li>
+                <li>블로그</li>
+                <li>프레스</li>
+                <li>연락처</li>
+            </ul>
+            <ul class="col_footer">
+                <li>사회 공헌</li>
+                <li>지속 가능성</li>
+                <li>재활용</li>
+            </ul>
+            <ul class="col_footer">
+                <li>이메일 설정</li>
+            </ul>
+            <ul class="col_footer">
+                <li class="sub_logo">FOR GAMERS. BY GAMERS.™</li>
+                <li class="social_icons">
+                    <div class="icons">
+                        <a href="https://www.youtube.com/@razer">
+                            <img src="./img/social_icon/youtube.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons"><a href="https://www.facebook.com/razer">
+                            <img src="./img/social_icon/facebook.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons"><a href="https://www.instagram.com/razer">
+                            <img src="./img/social_icon/ig.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icons"><a href="https://www.twitter.com/Razer">
+                            <img src="./img/social_icon/twitter.png" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="row_footer2">
+            <div class="copyright">Copyright © 2022 Razer Inc. All rights reserved. </div>
+            <ul class="legal_term">
+                <li>Site Map</li>
+                <li>Legal Terms</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+            </ul>
+        </div>`
+    $(".footer").append(make_footer);
+    /* ====================================================================================================
+    =========================== 반응형 =====================================================================
+    ======================================================================================================= */
     function sync_width_1920() {
         /*헤더3 호버 색상변경 */
         $('.menu_info').hover(function () {
@@ -94,9 +292,6 @@ $(document).ready(function () {
                 color: "#34ce29"
             }, 300)
         })
-        /*컨텐츠 부분 클릭 시 헤더 & 카트 창 OFF*/
-        // $('#wrap_contain').click(function () {
-
         $(window).scroll(function () {
             let s_top = $(window).scrollTop();
             if (s_top > 0) {
@@ -248,62 +443,6 @@ $(document).ready(function () {
             }
         })
     }
-    /* ====================================================================================================
-    =========================== 푸터 =====================================================================
-    ======================================================================================================= */
-    let make_footer = `        <div class="row_footer1">
-            <ul class="col_footer">
-                <li>레이저 스토리</li>
-                <li>채용</li>
-                <li>투자자</li>
-                <li>블로그</li>
-                <li>프레스</li>
-                <li>연락처</li>
-            </ul>
-            <ul class="col_footer">
-                <li>사회 공헌</li>
-                <li>지속 가능성</li>
-                <li>재활용</li>
-            </ul>
-            <ul class="col_footer">
-                <li>이메일 설정</li>
-            </ul>
-            <ul class="col_footer">
-                <li class="sub_logo">FOR GAMERS. BY GAMERS.™</li>
-                <li class="social_icons">
-                    <div class="icons">
-                        <a href="https://www.youtube.com/@razer">
-                            <img src="./img/social_icon/youtube.png" alt="">
-                        </a>
-                    </div>
-                    <div class="icons"><a href="https://www.facebook.com/razer">
-                            <img src="./img/social_icon/facebook.png" alt="">
-                        </a>
-                    </div>
-                    <div class="icons"><a href="https://www.instagram.com/razer">
-                            <img src="./img/social_icon/ig.png" alt="">
-                        </a>
-                    </div>
-                    <div class="icons"><a href="https://www.twitter.com/Razer">
-                            <img src="./img/social_icon/twitter.png" alt="">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="row_footer2">
-            <div class="copyright">Copyright © 2022 Razer Inc. All rights reserved. </div>
-            <ul class="legal_term">
-                <li>Site Map</li>
-                <li>Legal Terms</li>
-                <li>Privacy Policy</li>
-                <li>Cookie Policy</li>
-            </ul>
-        </div>`
-    $(".footer").append(make_footer);
-    /* ====================================================================================================
-    =========================== 반응형 =====================================================================
-    ======================================================================================================= */
     let header_in = "100"
     let header_out = "100"
     $(window).resize(function () {
@@ -335,6 +474,7 @@ $(document).ready(function () {
             sync_width_1150()
         }
     })
+
     if (matchMedia("screen and (max-width: 500px)").matches) {
         header_out = "125"
         header_in = "75"
